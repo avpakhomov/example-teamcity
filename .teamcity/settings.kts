@@ -58,7 +58,7 @@ object Build : BuildType({
             name = "Build & Test"
 
             conditions {
-                doesNotContain("teamcity.build.branch", "master2")
+                doesNotContain("teamcity.build.branch", "master")
             }
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
